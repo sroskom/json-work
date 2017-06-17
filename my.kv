@@ -1,0 +1,20 @@
+<Label>:
+	font_size: 50
+<Button>:
+	font_size: 50
+<CustomFloatLayout>:
+	CustomWidget:
+		Label:
+			text: 'level : '
+			pos: self.width,self.height*4
+			color: 1,1,1,1
+		Label:
+			id: lbl
+			text: root.getlevel()
+			pos: self.width+100,self.height*4
+			color: 1,1,1,1
+		Button:
+			size: 200,100
+			pos: 100,self.height/2
+			text: 'level up'
+			on_press: root.dosomething()
